@@ -1,0 +1,14 @@
+# Build context for mayhem/Dockerfile: the full repo including .git (the grader needs the history),
+# minus local build outputs and editor/OS cruft.
+mayhem/build-fuzz/
+mayhem/build-test/
+**/.libs/
+**/.deps/
+*.o
+*.lo
+*.la
+*.so
+*.a
+.DS_Store
+*.swp
+*~
