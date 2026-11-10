@@ -1,0 +1,9 @@
+project: savantenvs/libmodbus
+target: FuzzReply-mined-7fdd691
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzReply-mined-7fdd691/testsuite
+cmds:
+  - cmd: /mayhem/FuzzReply
+    libfuzzer: true
+    timeout: 5
